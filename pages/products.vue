@@ -23,6 +23,7 @@
 <script>
     import { mapActions, mapState } from 'vuex';
     export default {
+    //generateur bd : https://mockaroo.com/
         data(){
             return {
                 products: [
