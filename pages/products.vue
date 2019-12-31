@@ -3,7 +3,7 @@
   <div style="padding: 1rem;"><label for="search">Recherche par nom : </label><input type="text" v-model="search"></div>
   <div class="products">
     <div class="product" v-for="(product) in matchingResults" :key="product._id.$oid">
-      <h2 class="text-center mb-3">{{ product.name }}</h2>
+      <h2 class="text-center mb-3">{{ product.name + ' ('+product.grade+'/5)'}}</h2>
       <hr class="hr">
       <aside style="width: 48%">
         <h3>de {{ product.brand }}</h3>
