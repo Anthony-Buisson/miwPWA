@@ -1,8 +1,8 @@
-import axios from '@nuxtjs/axios';
+import axios from 'axios';
 
 export async function asyncGetProducts(){
   try {
-    const response = axios.get('http://localhost:3001/');
+    const response = await axios.get('http://localhost:3001/');
     return response;
   }catch (e) {
     console.log(e);
